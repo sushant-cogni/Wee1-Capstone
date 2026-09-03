@@ -1,0 +1,5 @@
+2026-09-03 16:48:21,096 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 16:48:21,114 | input_tokens=348 output_tokens=34 fields={"query_type": "info_request", "regulation_ref": "FCA", "jurisdiction": "uk", "urgency": "10 business days", "submitting_team": "KYC Operations"}
+2026-09-03 16:51:41,433 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 16:51:41,454 | input_tokens=488 output_tokens=36 fields={"query_type": "regulatory_examination", "regulation_ref": "FCA_SYSC", "jurisdiction": "uk", "urgency": "standard", "submitting_team": "KYC Operations"}
+2026-09-03 16:51:44,711 | saved_record={"query_type": "regulatory_examination", "regulation_ref": "FCA_SYSC", "jurisdiction": "uk", "urgency": "standard", "submitting_team": "Kyc Operations"}
