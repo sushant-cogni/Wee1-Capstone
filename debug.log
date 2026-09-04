@@ -3,3 +3,32 @@
 2026-09-03 16:51:41,433 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2026-09-03 16:51:41,454 | input_tokens=488 output_tokens=36 fields={"query_type": "regulatory_examination", "regulation_ref": "FCA_SYSC", "jurisdiction": "uk", "urgency": "standard", "submitting_team": "KYC Operations"}
 2026-09-03 16:51:44,711 | saved_record={"query_type": "regulatory_examination", "regulation_ref": "FCA_SYSC", "jurisdiction": "uk", "urgency": "standard", "submitting_team": "Kyc Operations"}
+2026-09-04 09:16:53,886 | Retrying request in 0.484053 seconds
+2026-09-04 09:16:54,429 | Retrying request in 0.916065 seconds
+2026-09-04 09:16:55,478 | Retrying request in 0.494432 seconds
+2026-09-04 09:16:56,036 | Retrying request in 0.929536 seconds
+2026-09-04 09:17:37,249 | Retrying request in 0.487382 seconds
+2026-09-04 09:17:37,791 | Retrying request in 0.870062 seconds
+2026-09-04 09:17:38,770 | Retrying request in 0.418476 seconds
+2026-09-04 09:17:39,243 | Retrying request in 0.873822 seconds
+2026-09-04 09:18:09,549 | Retrying request in 0.437212 seconds
+2026-09-04 09:18:10,037 | Retrying request in 0.960425 seconds
+2026-09-04 09:18:11,187 | Retrying request in 0.469361 seconds
+2026-09-04 09:18:11,726 | Retrying request in 0.816166 seconds
+2026-09-04 09:18:50,657 | Retrying request in 0.387838 seconds
+2026-09-04 09:18:51,107 | Retrying request in 0.917753 seconds
+2026-09-04 09:18:52,126 | Retrying request in 0.427480 seconds
+2026-09-04 09:18:52,617 | Retrying request in 0.773821 seconds
+2026-09-04 09:20:41,497 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-04 09:20:41,526 | input_tokens=472 output_tokens=28 fields={"query_type": "fraud_investigation", "jurisdiction": "india", "submitting_team": "Fraud Operations"}
+2026-09-04 10:28:59,461 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-04 10:28:59,494 | input_tokens=472 output_tokens=23 fields={"query_type": "fraud_investigation", "jurisdiction": "india", "submitting_team": "Fraud Operations"}
+2026-09-04 10:30:41,346 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-04 10:30:41,360 | input_tokens=515 output_tokens=35 fields={"query_type": "sar_str_filing", "regulation_ref": "BSA_AML", "jurisdiction": "usa", "urgency": "critical", "submitting_team": "Transaction Monitoring"}
+2026-09-04 10:30:42,140 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-04 10:30:42,146 | input_tokens=502 output_tokens=1 fields={}
+2026-09-04 10:30:54,851 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-04 10:30:54,856 | input_tokens=532 output_tokens=6 fields={"urgency": "critical"}
+2026-09-04 10:33:06,023 | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-04 10:33:06,042 | input_tokens=487 output_tokens=35 fields={"query_type": "sar_str_filing", "regulation_ref": "BSA_AML", "jurisdiction": "usa", "urgency": "critical", "submitting_team": "Transaction Monitoring"}
+2026-09-04 10:33:09,125 | saved_record={"query_type": "sar_str_filing", "regulation_ref": "BSA_AML", "jurisdiction": "usa", "urgency": "critical", "submitting_team": "Transaction Monitoring"}

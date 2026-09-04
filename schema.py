@@ -60,7 +60,13 @@ class IntakeRecord(BaseModel):
         if any(char.isdigit() for char in value):
             raise ValueError("Submitting team cannot contain numeric identifiers.")
 
-        forbidden_words = ["customer", "account", "transaction", "case"]
+        forbidden_words = [
+            "customer id",
+            "account number",
+            "transaction id",
+            "case number",
+        ]
+
         if any(word in value.lower() for word in forbidden_words):
             raise ValueError("Submitting team must be a business team.")
 

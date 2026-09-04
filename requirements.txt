@@ -1,5 +1,7 @@
 langchain
 langchain-openai
-langchain-classic
-pydantic
+langchain-core
+langchain-community
 python-dotenv
+pydantic
+openai

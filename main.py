@@ -12,6 +12,11 @@ from storage import (
     save_record,
 )
 
+from tools import (
+    compliance_checker,
+    sensitive_data_checker,
+)
+
 
 COMPLIANCE_WORDS = [
     "aml", "kyc", "sanction", "ofac", "fraud", "sar", "str",
@@ -28,10 +33,6 @@ REQUIRED_FIELDS = [
     "submitting_team",
 ]
 
-
-def is_compliance_query(text):
-    text = text.lower()
-    return any(word in text for word in COMPLIANCE_WORDS)
 
 
 def ask_for_missing_field(field):
@@ -102,15 +103,21 @@ def main():
             pending_record = None
 
         # Block IDs before sending text to model or memory.
-        if contains_sensitive_data(user_message):
+        if sensitive_data_checker.invoke({"text": user_message}):
             print(
                 "\nSmartIntake: Please remove customer IDs, account numbers, "
                 "transaction IDs, and case references before continuing.\n"
             )
             continue
 
+        
+
         # Avoid unrelated messages.
-        if not is_compliance_query(user_message) and not collected_fields:
+        
+        if (
+            not compliance_checker.invoke({"text": user_message})
+            and not collected_fields
+        ):
             print(
                 "\nSmartIntake: I handle AML and financial-compliance intake "
                 "only. Please describe a compliance query.\n"
